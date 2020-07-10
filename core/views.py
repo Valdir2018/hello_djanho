@@ -6,4 +6,8 @@ def hello(request, nome, idade):
 
 def soma(request, num1, num2):
     resultado = int(num1) + int(num2)
-    return HttpResponse(resultado)
+    return HttpResponse("O Resultado dessa operação é {}".format(resultado))
+
+def divisao(request, num1,num2):
+    resultado = int(num1) / int(num2)
+    return HttpResponse("O Resultado dessa operação é {}".format(resultado));
