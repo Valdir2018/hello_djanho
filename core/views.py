@@ -11,3 +11,7 @@ def soma(request, num1, num2):
 def divisao(request, num1,num2):
     resultado = int(num1) / int(num2)
     return HttpResponse("O Resultado dessa operação é {}".format(resultado));
+
+def multiplicacao(request, num1, num2):
+    resultado = int(num1) * int(num2)
+    return HttpResponse("O Resultsdo dessa operação é {}".format(resultado))
